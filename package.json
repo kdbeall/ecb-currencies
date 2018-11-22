@@ -1,10 +1,15 @@
 {
   "name": "ecb-currencies",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Retrieves exchange rates from the European Central Bank in a JSON format",
   "main": "currencies.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest && standard"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
   },
   "repository": {
     "type": "git",
@@ -21,7 +26,8 @@
   },
   "homepage": "https://github.com/kdbeall/ecb-currencies#readme",
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "standard": "^12.0.1"
   },
   "dependencies": {
     "node-fetch": "^2.3.0",
