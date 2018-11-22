@@ -2,9 +2,9 @@
   "name": "ecb-currencies",
   "version": "0.0.1",
   "description": "Retrieves exchange rates from the European Central Bank in a JSON format",
-  "main": "index.js",
+  "main": "currencies.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/kdbeall/ecb-currencies/issues"
   },
-  "homepage": "https://github.com/kdbeall/ecb-currencies#readme"
+  "homepage": "https://github.com/kdbeall/ecb-currencies#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.3.0",
+    "xml-js": "^1.6.8"
+  }
 }
