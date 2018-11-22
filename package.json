@@ -1,0 +1,23 @@
+{
+  "name": "ecb-currencies",
+  "version": "0.0.1",
+  "description": "Retrieves exchange rates from the European Central Bank in a JSON format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdbeall/ecb-currencies.git"
+  },
+  "keywords": [
+    "currency",
+    "conversion"
+  ],
+  "author": "kdbeall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kdbeall/ecb-currencies/issues"
+  },
+  "homepage": "https://github.com/kdbeall/ecb-currencies#readme"
+}
