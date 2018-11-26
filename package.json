@@ -1,6 +1,6 @@
 {
   "name": "ecb-currencies",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Retrieves exchange rates from the European Central Bank in a JSON format",
   "main": "currencies.js",
   "scripts": {

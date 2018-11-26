@@ -1,5 +1,5 @@
-var convert = require('xml-js')
-var fetch = require('node-fetch')
+const convert = require('xml-js')
+const fetch = require('node-fetch')
 
 function checkStatus (res) {
   if (res.ok) {
@@ -16,8 +16,12 @@ function currenciesFormatted (body) {
   }
 }
 function ratesList (body) {
-  return convert.xml2js(body, { compact: true })['gesmes:Envelope']['Cube']['Cube']['Cube']
+  let rates = convert.xml2js(body, { compact: true })['gesmes:Envelope']['Cube']['Cube']['Cube']
     .map(item => item['_attributes'])
+  for (let rate of rates) {
+    rate.rate = parseFloat(rate.rate)
+  }
+  return rates
 }
 
 function date (body) {
